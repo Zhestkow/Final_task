@@ -14,6 +14,6 @@
 
 ## Блок схема
 
-![Блок-схема](\Final_task.drawio.png)
+![Блок-схема](Diagram\Final_task.drawio.png)
 
 или в папке **Diagram**
