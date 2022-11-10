@@ -10,11 +10,9 @@ Clear();
 
 Write("Введите значения через пробел: ");
 string[] Array = ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
-string[] ArrayResult = new string[GetNewArrayLength(Array)];
+string[] ArrayResult = new string[GetNewArrayLength(Array)!];
 GetNewArray(Array, ArrayResult);
-WriteLine($"[{string.Join(", ", Array)}]");
-PrintNewArray(ArrayResult);
-
+WriteLine($"[{string.Join(", ", Array)}] ---> [{string.Join(", ", ArrayResult)}]");
 
 
 
@@ -43,14 +41,4 @@ string[] GetNewArray(string[] array, string[] array2)
         }
     }
     return array2;
-}
-
-void PrintNewArray(string[] inArray)
-{
-    Write("[");
-    for (int i = 0; i < inArray.Length - 1; i++)
-    {
-        Write($"{inArray[i]}, ");
-    }
-    Write($"{inArray[inArray.Length - 1]}]");
 }
